@@ -9,49 +9,69 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .background-img {
+            background-image: url("photo.jpg");
+            height: 700px;
+            width: 800px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #2a3cad;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px #2a3cad;
+            position: relative;
+        }
+
+        h1 {
+            text-shadow: 3px 3px red;
+            font-size:50px;
+            font-weight: bolder;
+        }
+    </style>
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-
+    <h1 style="margin-left: 475px;">Student's Marksheet</h1>
     <div class="container">
         <div class="row">
-            <form autocomplete="off" onsubmit="event.preventDefault() ;onFormSubmit()">
-                <div class="form-group">
-                    <label>Name</label>
+            <form autocomplete="off" onsubmit="event.preventDefault() ;onFormSubmit()" class="background-img">
+                <div class="form-group" style="margin-left: 500px" ;>
+                    <label class="text-danger">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Name">
                 </div>
-                <div class="form-group">
-                    <label>Grade</label>
+                <div class="form-group" style="margin-left: 500px">
+                    <label class="text-danger">Grade</label>
                     <input type="text" class="form-control" id="grade" placeholder="Grade">
                 </div>
-                <div class="form-group">
-                    <label>Math</label>
+                <div class="form-group" style="margin-left: 500px">
+                    <label class="text-danger">Math</label>
                     <input type="number" class="form-control" id="math" placeholder="Math">
                 </div>
-                <div class="form-group">
-                    <label>Science</label>
+                <div class="form-group" style="margin-left: 500px">
+                    <label class="text-danger">Science</label>
                     <input type="number" class="form-control" id="science" placeholder="Science">
                 </div>
-                <div class="form-group">
-                    <label>english</label>
+                <div class="form-group" style="margin-left: 500px">
+                    <label class="text-danger">English</label>
                     <input type="number" class="form-control" id="english" placeholder="english">
                 </div>
-                <div class="form-group">
-                    <label>History</label>
+                <div class="form-group" style="margin-left: 500px">
+                    <label class="text-danger">History</label>
                     <input type="number" class="form-control" id="history" placeholder="History">
                 </div>
-                <div class="form-group">
-                    <label>Geography</label>
+                <div class="form-group" style="margin-left: 500px">
+                    <label class="text-danger">Geography</label>
                     <input type="number" class="form-control" id="geography" placeholder="Geography">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" style="margin-left: 500px">Submit</button>
 
             </form>
-            <p></p>
-            <p></p>
-            <table class="table table-dark" id="studentList">
+
+            <table class="table table-striped table-dark" id="studentList" style="margin-top: 30px;">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
